@@ -8,6 +8,16 @@ h1 {
   margin-top: 0;
 }
 
+h2 {
+  font-size: 1.2rem;
+  font-family: "Arial Rounded MT Bold" , serif;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-family: "Arial Rounded MT Bold", serif;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -39,7 +49,7 @@ ul {
 
 header {
   position: relative;
-  background-color:rgb(0, 162, 255);
+  background-color: rgb(0, 162, 255);
   border-top: 25px solid rgb(0, 162, 255);
   z-index: 2;
 }
@@ -47,6 +57,27 @@ header {
 main {
   position: relative;
   padding-left: 5px;
+}
+
+#modal-content-pane {
+  position: absolute;
+  height: 500px;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  background: white;
+  padding: 20px;
+  display: none;
+}
+
+#modal-panel {
+  position: absolute;
+  z-index: 4;
+  background-color: black;
+  width: 100vw;
+  opacity: .85;
+  display: none;
 }
 
 @media (width > 736px) {
@@ -88,15 +119,11 @@ main {
 }
 
 @media (width <= 736px) {
-  h1 {
-    color: red;
-  }
-
   #menu-list-one {
     border-top: 5px solid blue;
-    border-left: 5px solid blue;
-    border-bottom: 5px solid blue;
-    border-right: 1px solid blue;
+    border-left: 1px solid blue;
+    border-bottom: 1px solid blue;
+    border-right: 5px solid blue;
     padding-left: 32px;
     padding-right: 32px;
     background-color: #6d6dce;
@@ -105,7 +132,7 @@ main {
   }
 
   #menu-list-two {
-    border-top: 5px solid blue;
+    border-top: 1px solid blue;
     border-left: 1px solid blue;
     border-bottom: 5px solid blue;
     border-right: 5px solid blue;
@@ -120,15 +147,10 @@ main {
     font-size: larger;
     top: 70px;
     left: -259px;
-    z-index: 3;
+    z-index: 2;
   }
 
   .shift_horizontal {
     left: 0;
   }
 }
-
-
-
-
-
