@@ -1,59 +1,40 @@
-body{
+body {
   position: relative;
   margin: auto;
   z-index: 0;
 }
 
-h1{
+h1 {
   margin-top: 0;
 }
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 li {
+  font-size: 1.2rem;
+  font-family: Arial, serif;
   list-style: none;
-  padding-inline-start: 0px;
+  padding-inline-start: 0;
 }
 
 ul {
   list-style: none;
-  padding-inline-start: 0px;
-}
-
-#menu-list-one {
-  border-top: 5px solid blue;
-  border-left: 5px solid blue;
-  border-bottom: 5px solid blue;
-  border-right: 1px solid blue;
-  padding-left: 32px;
-  padding-right: 32px
-}
-
-#menu-list-two {
-  border-top: 5px solid blue;
-  border-left: 1px solid blue;
-  border-bottom: 5px solid blue;
-  border-right: 5px solid blue;
-  padding-left: 32px;
-  padding-right: 32px
+  padding-inline-start: 0;
 }
 
 #js-triggers {
   text-align: right;
 }
-#js-triggers-first {
-  padding-right: 4px;
+
+#js-triggers-menu {
+  padding-right: 11px;
 }
 
-nav {
-  position: absolute;
-  font-size: larger;
-  top: 32px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 3;
+#js-triggers-modal {
+  padding-right: 7px;
 }
 
 header {
@@ -68,8 +49,86 @@ main {
   padding-left: 5px;
 }
 
-@media (max-width: 736px) {
+@media (width > 736px) {
+  #menu-list-one {
+    border-top: 5px solid blue;
+    border-left: 5px solid blue;
+    border-bottom: 5px solid blue;
+    border-right: 1px solid blue;
+    padding-left: 32px;
+    padding-right: 32px;
+    background-color: #6d6dce;
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  #menu-list-two {
+    border-top: 5px solid blue;
+    border-left: 1px solid blue;
+    border-bottom: 5px solid blue;
+    border-right: 5px solid blue;
+    padding-left: 32px;
+    padding-right: 32px;
+    background-color: #6d6dce;
+    color: white;
+  }
+
+  nav {
+    position: absolute;
+    font-size: larger;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  .shift_vertical {
+    top: 70px;
+  }
+}
+
+@media (width <= 736px) {
   h1 {
     color: red;
   }
+
+  #menu-list-one {
+    border-top: 5px solid blue;
+    border-left: 5px solid blue;
+    border-bottom: 5px solid blue;
+    border-right: 1px solid blue;
+    padding-left: 32px;
+    padding-right: 32px;
+    background-color: #6d6dce;
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  #menu-list-two {
+    border-top: 5px solid blue;
+    border-left: 1px solid blue;
+    border-bottom: 5px solid blue;
+    border-right: 5px solid blue;
+    padding-left: 32px;
+    padding-right: 32px;
+    background-color: #6d6dce;
+    color: white;
+  }
+
+  nav {
+    position: absolute;
+    font-size: larger;
+    top: 70px;
+    left: -259px;
+    z-index: 3;
+  }
+
+  .shift_horizontal {
+    left: 0;
+  }
 }
+
+
+
+
+
